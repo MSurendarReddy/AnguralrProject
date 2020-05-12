@@ -15,6 +15,7 @@ export class ErrorComponent implements OnInit {
     console.log("test")
     console.log("test")
     console.log("dev")
+    console.log("from browser")
   }
 
 }
