@@ -13,7 +13,7 @@ export class ErrorComponent implements OnInit {
 
   ngOnInit() {
     console.log("test")
-    console.log("test 2")
+    console.log("test")
   }
 
 }
