@@ -14,6 +14,7 @@ export class ErrorComponent implements OnInit {
   ngOnInit() {
     console.log("test")
     console.log("test")
+    console.log("dev")
   }
 
 }
