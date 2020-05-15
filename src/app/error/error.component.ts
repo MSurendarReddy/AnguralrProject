@@ -21,6 +21,7 @@ export class ErrorComponent implements OnInit {
     console.log("vscode new line added")
     console.log("vscode new line added")
     console.log("vscode new line added")
+     console.log("from browser new")
   }
 
 }
