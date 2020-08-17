@@ -1,90 +1,148 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
-	xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
-	<modelVersion>4.0.0</modelVersion>
+ * {
+     margin: 0px;
+     padding: 0px;
+     font-family: sans-serif
+ }
+ 
+ header {
+     background: #1e272e;
+     height: 50px;
+ }
+ 
+ .admin_wrapper {
+     display: flex;
+     /* height: calc(100% - 50px); */
+ }
+ 
+ .leftsidebar {
+     flex: 2;
+     height: 700px;
+     background: #2d3436;
+ }
+ 
+ .leftsidebar ul {
+     list-style: none;
+     margin: 0px;
+     padding: 0px;
+ }
+ 
+ .leftsidebar ul li a {
+     padding: 3px;
+     margin: 5px;
+     display: block;
+     border-bottom: 1px solid #1e272e;
+     color: #dfe6e9;
+     text-decoration: none;
+     font-weight: 100;
+     font-size: smaller;
+ }
+ 
+ .leftsidebar ul li a:hover {
+     background: #1e272e;
+ }
+ /*  -----------------TOOLBAR------------  */
+ 
+ .toolbar {
+     /* display: flex; */
+     flex: 8;
+     height: 100%;
+     padding: 5px;
+     margin: 5px;
+     display: block;
+     background: #f8f8f8;
+     text-decoration: none;
+     font-weight: 100;
+     font-size: smaller;
+ }
+ 
+ footer {
+     position: fixed;
+     width: 100%;
+     height: 50px;
+ }
+ 
+ .far fa-arrow-alt-circle-down {
+     color: aliceblue;
+ }
+ 
+ .material-icons.md-18 {
+     font-size: 18px;
+     color: blue;
+     padding: 5px;
+     float: right;
+ }
+ 
+ .material-icons-outlined.md-18 {
+     font-size: 18px;
+     color: blue;
+     padding: 5px;
+     float: right;
+ }
+ /* .material-icons.md-24 { font-size: 24px;color: #0000FF } */
+ 
+ .material-icons.md-36 {
+     font-size: 36px;
+     color: #0000FF
+ }
+ 
+ .material-icons.md-48 {
+     font-size: 48px;
+     color: #0000FF
+ }
 
-	<groupId>com.example</groupId>
-	<artifactId>office-365-wopi</artifactId>
-	<version>0.0.1-SNAPSHOT</version>
-	<packaging>jar</packaging>
-
-	<name>office-365-wopi</name>
-	<description>Demo project for Spring Boot</description>
-
-	<!-- Output to jar format -->
-
-	<parent>
-		<groupId>org.springframework.boot</groupId>
-		<artifactId>spring-boot-starter-parent</artifactId>
-		<version>2.0.1.RELEASE</version>
-		<relativePath /> <!-- lookup parent from repository -->
-	</parent>
-
-	<properties>
-		<project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
-		<project.reporting.outputEncoding>UTF-8</project.reporting.outputEncoding>
-		<java.version>1.8</java.version>
-	</properties>
-
-	<dependencies>
-		<dependency>
-			<groupId>org.springframework.boot</groupId>
-			<artifactId>spring-boot-starter-web</artifactId>
-		</dependency>
-		<dependency>
-			<groupId>org.springframework.boot</groupId>
-			<artifactId>spring-boot-starter-security</artifactId>
-		</dependency>
-		<dependency>
-			<groupId>io.jsonwebtoken</groupId>
-			<artifactId>jjwt</artifactId>
-			<version>0.9.1</version>
-		</dependency>
-
-		<dependency>
-			<groupId>com.fasterxml.jackson.dataformat</groupId>
-			<artifactId>jackson-dataformat-xml</artifactId>
-			<!-- <version>2.9.0</version> -->
-		</dependency>
 
 
-		<dependency>
-			<groupId>org.springframework.boot</groupId>
-			<artifactId>spring-boot-devtools</artifactId>
-			<scope>runtime</scope>
-		</dependency>
+<!doctype html>
+<html lang="en">
 
-		<dependency>
-			<groupId>org.springframework.boot</groupId>
-			<artifactId>spring-boot-starter-actuator</artifactId>
-		</dependency>
+<head>
+  <title>Bootstrap</title>
+  <!-- Required meta tags -->
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <link rel="stylesheet" href="my.css" Optional JavaScript -->
+  <link
+    href="https://fonts.googleapis.com/css?family=Material+Icons|Material+Icons+Outlined|Material+Icons+Two+Tone|Material+Icons+Round|Material+Icons+Sharp"
+    rel="stylesheet">
 
-		<dependency>
-			<groupId>org.springframework.data</groupId>
-			<artifactId>spring-data-rest-hal-browser</artifactId>
-		</dependency>
+  <!-- <script src="style.css"></script> -->
+</head>
 
-		<dependency>
-			<groupId>org.springframework.boot</groupId>
-			<artifactId>spring-boot-starter-test</artifactId>
-			<scope>test</scope>
-		</dependency>
+<body>
+  <!DOCTYPE html>
+  <html>
+  <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <style>
 
-		<dependency>
-			<groupId>org.projectlombok</groupId>
-			<artifactId>lombok</artifactId>
-		</dependency>
+    </style>
+  </head>
 
-	</dependencies>
+  <body>
+    <!-- <header>
+      <div class="logo">
+      </div>
+    </header> -->
+    <div class="admin_wrapper">
+      <div class="leftsidebar">
+        <ul>
+          <li><a href="#">Home</a></li>
+          <li><a href="#">About Us</a></li>
+          <li><a href="#">Contact Us</a></li>
+        </ul>
+      </div>
+      <div class="toolbar">
+        <i class="material-icons md-18">highlight_off</i>
+        <i class="material-icons md-18">save_alt</i>
+        <i class="material-icons-outlined md-18">save</i>
+        <i class="material-icons md-18">zoom_in</i>
+        <i class="material-icons md-18">zoom_out</i>
+        <i class="material-icons-outlined md-18">edit</i>
+      </div>
+    </div>
 
-	<build>
-		<plugins>
-			<plugin>
-				<groupId>org.springframework.boot</groupId>
-				<artifactId>spring-boot-maven-plugin</artifactId>
-			</plugin>
-		</plugins>
-	</build>
+  </body>
 
+  </html>
 
-</project>
+</body>
